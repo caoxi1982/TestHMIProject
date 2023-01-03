@@ -1,0 +1,34 @@
+Name: Tags
+Type: BaseObjectType
+Children:
+- Name: Controller Tags
+  Type: TagStructure
+  Children:
+  - Name: apple
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "apple"
+  - Name: pine
+    Id: g=72169ff0d4eea60cafe1621acb9b9326
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "pine"
+  - Name: pear
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "pear"
