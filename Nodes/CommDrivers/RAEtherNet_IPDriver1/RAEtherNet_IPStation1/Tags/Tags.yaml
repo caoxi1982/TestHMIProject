@@ -14,7 +14,6 @@ Children:
       DataType: String
       Value: "apple"
   - Name: pine
-    Id: g=72169ff0d4eea60cafe1621acb9b9326
     Type: RAEtherNetIPTag
     DataType: Float
     Value: 0.0
