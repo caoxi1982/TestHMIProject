@@ -1,6 +1,6 @@
 Name: TagImporter
 Type: RAEtherNetIPTagImporter
-OwnerId: ns=2;g=3ae087c8cd9490fdf65ee139fcb915a3
+OwnerId: ns=2;g=5051884d744d3b5dbb150d15d6e0d565
 Children:
 - Name: IgnoredPLCItems
   Type: BaseDataVariableType
@@ -16,4 +16,8 @@ Children:
 - Name: Mode
   Type: BaseDataVariableType
   DataType: FetchModes
-  Value: 1
+  Value: 0
+- Name: FilePath
+  Type: BaseDataVariableType
+  DataType: AbsoluteResourceUri
+  Value: "ns=2;%PROJECTDIR%/CookieLine_v11_4_L84E.ACD"

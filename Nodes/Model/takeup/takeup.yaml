@@ -1,0 +1,25 @@
+Name: takeup
+Type: FolderType
+Children:
+- Name: mainmotor
+  Type: motorType
+  Children:
+  - Name: start
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: stop
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: winding
+  Type: motorType
+  Children:
+  - Name: start
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: stop
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false

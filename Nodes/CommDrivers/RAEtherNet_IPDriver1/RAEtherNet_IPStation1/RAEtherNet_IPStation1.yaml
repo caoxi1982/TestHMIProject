@@ -1,34 +1,102 @@
 Name: RAEtherNet_IPStation1
-Id: g=3ae087c8cd9490fdf65ee139fcb915a3
+Id: g=5051884d744d3b5dbb150d15d6e0d565
 Type: RAEtherNetIPStation
 Children:
 - Name: Route
   Type: BaseDataVariableType
   DataType: String
-  Value: "192.168.1.31"
+  Value: "192.168.248.131"
 - Name: OperationCode
   Type: BaseDataVariableType
   DataType: CommunicationOperationCode
   AccessLevel: Read
   Value: 0
 - Class: Reference
-  Target: ns=8;i=29
+  Target: ns=20;i=29
   Direction: Forward
 - Class: Reference
-  Target: ns=8;i=30
+  Target: ns=20;i=30
   Direction: Forward
 - Class: Reference
-  Target: ns=8;i=67
+  Target: ns=20;i=67
   Direction: Forward
 - Class: Reference
-  Target: ns=8;i=31
+  Target: ns=20;i=31
   Direction: Forward
 - Class: Reference
-  Target: ns=8;i=94
+  Target: ns=20;i=94
   Direction: Forward
 - Class: Reference
-  Target: ns=8;i=96
+  Target: ns=20;i=96
   Direction: Forward
 - File: Tags/Tags.yaml
 - Name: Types
   Type: BaseObjectType
+  Children:
+  - Name: Motor
+    Id: g=775fe06a8c01d93065686aab8e7e3baf
+    Supertype: TagStructure
+    Children:
+    - Name: running
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "running"
+    - Name: start
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "start"
+    - Name: stop
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "stop"
+    - Name: speedcommand
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "speedcommand"
+    - Name: torquecommand
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "torquecommand"
+    - Name: actualSpeed
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "actualSpeed"
+    - Name: actualTorque
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "actualTorque"

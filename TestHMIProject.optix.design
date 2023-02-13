@@ -15,11 +15,11 @@ Project:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
    Version: 1.0
-  5:
+  9:
    Uri: 'urn:FTOptix:TagImporter'
    Module: FTOptix.TagImporter
    Version: 1.0
-  6:
+  10:
    Uri: 'urn:FTOptix:RAEtherNetIPTagImporter'
    Module: FTOptix.RAEtherNetIPTagImporter
    Version: 1.0

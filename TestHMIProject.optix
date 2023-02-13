@@ -29,13 +29,21 @@ Project:
    Uri: 'urn:FTOptix:Retentivity'
    Module: FTOptix.Retentivity
    Version: 1.0
-  8:
+  18:
+   Uri: 'urn:FTOptix:AuditSigning'
+   Module: FTOptix.AuditSigning
+   Version: 1.0
+  20:
    Uri: 'urn:FTOptix:CommunicationDriver'
    Module: FTOptix.CommunicationDriver
    Version: 1.0
-  9:
+  22:
    Uri: 'urn:FTOptix:RAEtherNetIP'
    Module: FTOptix.RAEtherNetIP
+   Version: 1.0
+  23:
+   Uri: 'urn:FTOptix:WebUI'
+   Module: FTOptix.WebUI
    Version: 1.0
  Nodes:
  - File: Nodes/TestHMIProject.yaml

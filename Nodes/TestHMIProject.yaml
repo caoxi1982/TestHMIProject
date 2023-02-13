@@ -59,3 +59,30 @@ Children:
     Type: PropertyType
     DataType: NodeId
     Value: {"Id":61}
+- Name: SigningWorkflow1
+  Type: SigningController
+  Children:
+  - Name: UsersAllowedToSign
+    Type: BaseObjectType
+  - Name: GroupsAllowedToSign
+    Type: BaseObjectType
+  - Name: UsersAllowedToDoubleSign
+    Type: BaseObjectType
+  - Name: GroupsAllowedToDoubleSign
+    Type: BaseObjectType
+  - Name: DefaultWorkflowType
+    Type: PropertyType
+    DataType: WorkflowType
+    Value: 0
+  - Class: Reference
+    Target: ns=18;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=47
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=50
+    Direction: Forward
