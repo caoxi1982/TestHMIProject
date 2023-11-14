@@ -1,5 +1,5 @@
 Name: UI
-Type: FolderType
+Type: UICategoryFolder
 Children:
 - Name: DefaultStyleSheet
   Id: g=f767a9cbb194c780dcd92dfa1a9cb12e
@@ -17,6 +17,11 @@ Children:
     Type: GaugeStyle
   - Name: NavigationPanelStyle
     Type: NavigationPanelStyle
+    Children:
+    - Name: IconUsesTextColor
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
   - Name: ChartStyle
     Type: ChartStyle
   - Name: DataListStyle
@@ -115,49 +120,73 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
-    - Name: startpage1
-      Type: startpage
+    - Name: NavigationPanel1
+      Type: NavigationPanel
       Children:
-      - Name: NavigationPanel1
-        Type: NavigationPanel
+      - Name: Panels
+        Type: BaseObjectType
         Children:
-        - Name: Panels
-          Type: BaseObjectType
+        - Name: Panel1
+          Type: NavigationPanelItem
           Children:
-          - Name: Panel1
-            Type: NavigationPanelItem
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-            - Name: Panel
-              Type: NodePointer
-              DataType: NodeId
-              Value: {"IdType":2,"Id":"09e019096f4e0835af3a58ec8da30086","Namespace":7}
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: {"Id":71,"Namespace":3}
-        - Name: CurrentPanel
-          Type: NodePointer
-          DataType: NodeId
-          AccessLevel: Read
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-          Children:
-          - Name: Kind
-            Type: PropertyType
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"ObjectCreate"}
+          - Name: Panel
+            Type: NodePointer
             DataType: NodeId
-            Value: {"Id":6,"Namespace":3}
+            Value: {"IdType":2,"Id":"92d82bb721e5d1a5ce93758ab8ceec27","Namespace":7}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":71,"Namespace":3}
+      - Name: CurrentPanel
+        Type: NodePointer
+        DataType: NodeId
+        AccessLevel: Read
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":6,"Namespace":3}
+      - Name: CurrentTabIndex
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Class: Reference
+        Target: ns=3;i=1181
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=1183
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1010.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 560.0
+    - Name: Label1
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Label1"}
   - Name: FullScreen
     Type: BaseDataVariableType
     DataType: Boolean
     ModellingRule: Optional
-    Value: true
+    Value: false
 - File: Panels/Panels.yaml
 - Name: FriendlyDark1
-  Id: g=9f8e83dc5d6844f3005b7df566ba9ebb
   Type: StyleSheet
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
@@ -208,6 +237,11 @@ Children:
       Value: 23.0
   - Name: NavigationPanelStyle
     Type: NavigationPanelStyle
+    Children:
+    - Name: IconUsesTextColor
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
   - Name: ChartStyle
     Type: ChartStyle
     Children:
@@ -318,51 +352,3 @@ Children:
     Type: PieChartStyle
   - Name: HistogramChartStyle
     Type: HistogramChartStyle
-- Name: WebPresentationEngine1
-  Type: ns=23;PresentationEngine
-  Children:
-  - Name: Protocol
-    Type: BaseDataVariableType
-    DataType: Protocol
-    Value: 1
-  - Name: IPAddress
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "0.0.0.0"
-  - Name: Port
-    Type: BaseDataVariableType
-    DataType: UInt16
-    Value: 80
-  - Name: StartWindow
-    Type: NodePointer
-    DataType: NodeId
-    Value: {"IdType":2,"Id":"7d7431aabd9ea4a140bf477399588a07","Namespace":7}
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: {"Id":12,"Namespace":3}
-  - Name: StyleSheet
-    Type: NodePointer
-    DataType: NodeId
-    Value: {"IdType":2,"Id":"9f8e83dc5d6844f3005b7df566ba9ebb","Namespace":7}
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: {"Id":447,"Namespace":3}
-  - Name: StartingUser
-    Type: NodePointer
-    DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: {"Id":14,"Namespace":1}
-  - Name: Sessions
-    Type: BaseObjectType
-  - Name: MaxNumberOfConnections
-    Type: BaseDataVariableType
-    DataType: UInt32
-    Value: 2

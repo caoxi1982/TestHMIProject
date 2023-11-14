@@ -1,0 +1,66 @@
+Name: ns=20;DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: Motor
+  Id: g=5e42e77397fc8cff5250d29bdcd57034
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Motor",
+    "DataType": {
+     "IdType": 2,
+     "Id": "5e42e77397fc8cff5250d29bdcd57034",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "running",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "start",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "stop",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "speedcommand",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "torquecommand",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "actualSpeed",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "actualTorque",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Motor"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding

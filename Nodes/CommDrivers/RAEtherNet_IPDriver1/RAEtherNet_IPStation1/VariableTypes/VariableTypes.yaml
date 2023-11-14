@@ -1,0 +1,89 @@
+Name: ns=20;VariableTypes
+Type: FolderType
+Children:
+- Name: Motor
+  Id: g=775fe06a8c01d93065686aab8e7e3baf
+  Supertype: TagStructure
+  DataType: Motor
+  ValueRank: Any
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 2,
+     "Id": "5e42e77397fc8cff5250d29bdcd57034",
+     "Namespace": 7
+    },
+    "Body": {
+     "running": false,
+     "start": false,
+     "stop": false,
+     "speedcommand": 0.0,
+     "torquecommand": 0.0,
+     "actualSpeed": 0.0,
+     "actualTorque": 0.0
+    }
+   }
+  Children:
+  - Name: running
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "running"
+  - Name: start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "start"
+  - Name: stop
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "stop"
+  - Name: speedcommand
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "speedcommand"
+  - Name: torquecommand
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "torquecommand"
+  - Name: actualSpeed
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "actualSpeed"
+  - Name: actualTorque
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "actualTorque"

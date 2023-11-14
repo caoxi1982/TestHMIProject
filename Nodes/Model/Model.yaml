@@ -1,16 +1,5 @@
 Name: Model
-Type: FolderType
+Type: ModelCategoryFolder
 Children:
-- Name: motorType
-  Id: g=e10c7357b793cfc405bb34719c9d2ebd
-  Supertype: BaseObjectType
-  Children:
-  - Name: start
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: false
-  - Name: stop
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: false
-- File: takeup/takeup.yaml
+- File: Pens/Pens.yaml
+- File: ShowPens/ShowPens.yaml

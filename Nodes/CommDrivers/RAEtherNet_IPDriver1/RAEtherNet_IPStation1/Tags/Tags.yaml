@@ -1,12 +1,39 @@
 Name: Tags
-Type: BaseObjectType
+Type: FolderType
 Children:
 - Name: Controller Tags
   Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "Id": 22
+     }
+    }
+   }
   Children:
   - Name: motor1
-    Id: g=b0e73101d2a6fa65da2b48c326a69035
     Type: Motor
+    DataType: Motor
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "5e42e77397fc8cff5250d29bdcd57034",
+       "Namespace": 7
+      },
+      "Body": {
+       "running": false,
+       "start": false,
+       "stop": false,
+       "speedcommand": 0.0,
+       "torquecommand": 0.0,
+       "actualSpeed": 0.0,
+       "actualTorque": 0.0
+      }
+     }
     Children:
     - Name: running
       Type: RAEtherNetIPTag
@@ -72,8 +99,25 @@ Children:
         DataType: String
         Value: "motor1.actualTorque"
   - Name: motor2
-    Id: g=17a484075f45702be29048abb331eccf
     Type: Motor
+    DataType: Motor
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "5e42e77397fc8cff5250d29bdcd57034",
+       "Namespace": 7
+      },
+      "Body": {
+       "running": false,
+       "start": false,
+       "stop": false,
+       "speedcommand": 0.0,
+       "torquecommand": 0.0,
+       "actualSpeed": 0.0,
+       "actualTorque": 0.0
+      }
+     }
     Children:
     - Name: running
       Type: RAEtherNetIPTag
@@ -140,6 +184,24 @@ Children:
         Value: "motor2.actualTorque"
   - Name: motor3
     Type: Motor
+    DataType: Motor
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "5e42e77397fc8cff5250d29bdcd57034",
+       "Namespace": 7
+      },
+      "Body": {
+       "running": false,
+       "start": false,
+       "stop": false,
+       "speedcommand": 0.0,
+       "torquecommand": 0.0,
+       "actualSpeed": 0.0,
+       "actualTorque": 0.0
+      }
+     }
     Children:
     - Name: running
       Type: RAEtherNetIPTag
@@ -206,6 +268,24 @@ Children:
         Value: "motor3.actualTorque"
   - Name: motor4
     Type: Motor
+    DataType: Motor
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "5e42e77397fc8cff5250d29bdcd57034",
+       "Namespace": 7
+      },
+      "Body": {
+       "running": false,
+       "start": false,
+       "stop": false,
+       "speedcommand": 0.0,
+       "torquecommand": 0.0,
+       "actualSpeed": 0.0,
+       "actualTorque": 0.0
+      }
+     }
     Children:
     - Name: running
       Type: RAEtherNetIPTag
